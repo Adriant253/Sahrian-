@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agregar Álbum</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <h1>Agregar Álbum de Música</h1>
+  <form action="upload_album.php" method="POST" enctype="multipart/form-data">
+    <label>Nombre del álbum:</label>
+    <input type="text" name="album_name" required>
+    <label>Cantante:</label>
+    <input type="text" name="singer" required>
+    <label>Compositor:</label>
+    <input type="text" name="composer" required>
+    <label>Disquera:</label>
+    <input type="text" name="record_label" required>
+    <label>Año de lanzamiento:</label>
+    <input type="number" name="release_year" required>
+    <label>Género:</label>
+    <input type="text" name="genre" required>
+    <label>Subir canción:</label>
+    <input type="file" name="song_file" accept="audio/*" required>
+    <button type="submit">Agregar Álbum</button>
+  </form>
+</body>
+</html>
